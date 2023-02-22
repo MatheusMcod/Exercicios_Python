@@ -2,8 +2,8 @@ import random
 opt=2; palpite=0; tentativas=0
 while(opt != 0):
     print("============Jogo de Adivinhação============")
-    print("Será gerado um numero aleatrio de 1 a 100 tente descobrir")
-    print("Você tera 5 tentativas")
+    print("Será gerado um numero aleatório de 1 a 100, tente descobrir")
+    print("Você terá 5 tentativas")
     print("1: para iniciar")
     print("0: para encerrar")
     print("===========================================")
@@ -15,7 +15,7 @@ while(opt != 0):
    
     while (palpite != numeroAd):
         if (tentativas == 5):
-            print("Sua ultima tentativa boa sorte")
+            print("Sua ultima tentativa, boa sorte!")
         
         palpite = int(input("Digite um palpite: "))
         if (palpite > numeroAd and tentativas < 5):
@@ -31,7 +31,7 @@ while(opt != 0):
                 
         
         if (palpite == numeroAd):
-            print("Acerto miseravi")
+            print("Acerto miseravi!!!")
         else:
             tentativas += 1
             if(tentativas == 6):
